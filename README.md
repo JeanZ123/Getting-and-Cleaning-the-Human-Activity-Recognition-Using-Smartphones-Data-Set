@@ -1,0 +1,1 @@
+# Getting-and-Cleaning-the-Human-Activity-Recognition-Using-Smartphones-Data-Set
