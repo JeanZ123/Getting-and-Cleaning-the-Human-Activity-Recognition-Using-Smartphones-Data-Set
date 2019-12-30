@@ -27,51 +27,43 @@ The purpose of the script 'run_Analysis.R' is to collect and clean the Human Act
 
 ## Producing the 'data_summary' table
 
-In order to produce the 'tidy_data_summary' table, the script 'run_analysis.R' was created and used. It performs the following tasks:
+In order to produce the 'data_summary' table, the script 'run_analysis.R' was created. It performs the following tasks:
 
-**Merges the training and the test sets to create one data set with target variables**
+**Merges the training and the test sets into a single dataset**
 
-1. Binds these files,
+1. Binds the following files,
 
 - UCI HAR Dataset/train/subject_train.txt
 - UCI HAR Dataset/train/X_train.txt
 - UCI HAR Dataset/train/y_train.txt.
 
-from the train set by columns to a table that contains, the human subject, the activity performed and the values of the features.
+from the train set by columns into a table that contains the human subject, the activity performed and the values of the features.
 
-2. Binds these files,
+2. Binds the following files,
 
 - UCI HAR Dataset/test/subject_test.txt
 - UCI HAR Dataset/test/X_test.txt
 - UCI HAR Dataset/test/y_test.txt.
 
-from the test set by columns to a table that contains, the human subject, the activity performed and the values of the features.
+from the test set by columns into a table that contains the human subject, the activity performed and the values of the features.
 
-3. Binds the data frames created for test and train set into one large dataset by rows.
+3. Binds the data frames created for the test and train set into one large dataset by rows.
 
 **Extracts only the measurements on the mean and standard deviation for each measurement**
 
-1. Finds the target features, which are the features with measurements about mean and standard deviation, and extracts them as well as those that indicate the 'subject' and 'activity' and creates a new data table only with the target variables.
+1. Selects all the features from the dataset which are measurements of mean or standard deviation into a new data table.
 
 **Uses descriptive activity names to name the activities in the data set**
 
-1. Replace the variable about activity, that contains integers from 1 to 6, with a factor based on levels and labels contained in the 'activity_labels' data file.
+1. Replaces the variable about activity, that contains integers from 1 to 6, with the appropriate labels provided in the 'activities' data file.
 
-**Appropriately labels the data set with target variables with descriptive names**
+**Appropriately labels the data set with descriptive variable names**
 
-1. Extracts the target variable names from 'features.txt'
-2. Corrects a typo that exists in some feature names, that is to replace 'BodyBody' that appears in the names of some features with just 'Body'.
-3. Creates a new tidy dataset with the appropriate labels for the variable names.
+1. Renames the second column of the data table into 'Activity'.
+2. Corrects minor typos that exist in some feature names and writes out some abbreviated variable names.
 
-**From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject**
+**Creates a new dataset with the average of each variable for each activity and each subject**
 
-1. Group the tidy data table created in step 4, by 'subject' and 'activity'.
-
-2. Summarize each variable to find the average for the grouped values.
-
-3. Ungroup the data table.
-
-4. Add descriptive names to the variables of the new tidy data table, by adding the prefix 'Avrg-' in the names of the target feature averages.
-
-5. Write the data in a text file in the present working directory.
-
+1. Groups the tidy data table created in step 4 by 'subject' and 'activity'.
+2. Calculates the average of each variable.
+3. Writes the data into a text file located in the current working directory.
