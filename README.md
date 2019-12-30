@@ -25,6 +25,8 @@ To read the table into R you can use the following command:
 data_summary <- read.table(file = "data_summary.txt",
                            header = TRUE, check.names = FALSE, dec = ".") 
 ```
+The original dataset can be downloaded[here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+
 ## Built With
 
 * [RStudio](https://rstudio.com/products/rstudio/download/) - The R development environment used
