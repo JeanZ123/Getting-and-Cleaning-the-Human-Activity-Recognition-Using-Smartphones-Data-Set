@@ -25,7 +25,7 @@ data_summary <- read.table(file = "data_summary.txt",
 ```
 ## Built With
 
-* [RStudio](http://www.) - The R development environment used
+* [RStudio](https://rstudio.com/products/rstudio/download/) - The R development environment used
 
 ## Authors
 
