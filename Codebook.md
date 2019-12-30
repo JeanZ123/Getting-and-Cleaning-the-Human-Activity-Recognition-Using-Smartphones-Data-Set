@@ -27,13 +27,13 @@ The purpose of the script 'run_Analysis.R' is to collect and clean the Human Act
 
 ### Description of the variables from the 'data_summary' data table
 
-The first two variables, 'subject' and 'activity', can uniquely identify each row of the table. The remaining 66 variables are the averages that were calculated for all the features with measurements on means and standard deviations that were selected from the original 'Human Activity Recognition Using Smartphones Dataset'.
+The first two variables, 'subject' and 'activity', are the identifiers of each row in the table. The remaining 66 variables are the averages that were calculated for all the features with measurements on means and standard deviations that were selected from the original 'Human Activity Recognition Using Smartphones Dataset'.
 
-The following list gives the name, class and a short description for all variables of the 'data_summary' table:
+The following is a list of all variables in the 'data_summary' table:
 
 1. Subject, integer,	1-30, Identifier of the human subject.
 2. Activity, character, Identifier of the activity. Values: WALKING, WALKING UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-3. TimeBodyAccelerometer-Mean()-X, numeric,	[-1, 1],	Time domain, Average of means for body acceleration on X axis
+3. Time_Body_Accelerometer_Mean()_X, numeric,	[-1, 1],	Time domain, Average of means for body acceleration on X axis
 4. TimeBodyAccelerometer-Mean()-Y, numeric,	[-1, 1],	Time domain, Average of means for body acceleration on Y axis
 5. TimeBodyAccelerometer-Mean()-Z,	numeric,	[-1, 1],	Time domain, Average of means for body acceleration on Z axis
 6. TimeBodyAccelerometer-STD()-X, numeric,	[-1, 1], Time domain, Average of standard deviations for body acceleration on X axis
