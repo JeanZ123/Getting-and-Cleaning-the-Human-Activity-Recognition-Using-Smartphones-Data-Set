@@ -33,7 +33,7 @@ The following is a list of all variables in the 'data_summary' table:
 
 1. Subject, integer,	1-30, Identifier of the human subject.
 2. Activity, character, Identifier of the activity. Values: WALKING, WALKING UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-3. Time_Body_Accelerometer_Mean()_X, numeric,	[-1, 1],	Time domain, Average of means for body acceleration on X axis
+3. TimeBodyAccelerometerMean()-X, numeric,	[-1, 1],	Time domain, Average of means for body acceleration on X axis
 4. TimeBodyAccelerometer-Mean()-Y, numeric,	[-1, 1],	Time domain, Average of means for body acceleration on Y axis
 5. TimeBodyAccelerometer-Mean()-Z,	numeric,	[-1, 1],	Time domain, Average of means for body acceleration on Z axis
 6. TimeBodyAccelerometer-STD()-X, numeric,	[-1, 1], Time domain, Average of standard deviations for body acceleration on X axis
