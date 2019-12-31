@@ -110,7 +110,7 @@ The following is a list of all variables in the 'data_summary' table with their 
 
 ## Producing the 'data_summary' table
 
-In order to produce the 'data_summary' table, the script 'run_analysis.R' was created. It performs the following tasks:
+The script 'run_analysis.R' performs the following tasks:
 
 **Merges the training and the test sets into a single dataset**
 
