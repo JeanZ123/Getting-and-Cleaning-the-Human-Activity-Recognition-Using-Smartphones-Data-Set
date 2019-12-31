@@ -25,11 +25,11 @@ General information about the collection of the raw data is given in the 'README
 
 > For each record it is provided:
 
-> Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-> Triaxial Angular velocity from the gyroscope.
-> A 561-feature vector with time and frequency domain variables.
-> Its activity label.
-> An identifier of the subject who carried out the experiment.
+> - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+> - Triaxial Angular velocity from the gyroscope.
+> - A 561-feature vector with time and frequency domain variables.
+> - Its activity label.
+> - An identifier of the subject who carried out the experiment.
 
 The purpose of the script 'run_Analysis.R' is to collect and clean the Human Activity Recognition Data Set. The resulting 'data_summary' table is a selection of the original dataset that 1.) only contains measurements on the mean and standard deviation and 2.) creates a new dataset with the average of each variable for each activity and each subject.
 
