@@ -23,7 +23,7 @@ General information about the collection of the raw data is given in the README.
 > gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff 
 > frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency > domain.
 
-The purpose of the script 'run_Analysis.R' is to collect and clean the Human Activity Recognition Data Set. The resulting 'Data_Summary' table is a selection of the original dataset that 1.) only contains measurements on the mean and standard deviation for each measurement and 2.) creates a new dataset with the average of each variable for each activity and each subject.
+The purpose of the script 'run_Analysis.R' is to collect and clean the Human Activity Recognition Data Set. The resulting 'data_summary' table is a selection of the original dataset that 1.) only contains measurements on the mean and standard deviation for each measurement and 2.) creates a new dataset with the average of each variable for each activity and each subject.
 
 ### Description of the variables from the 'data_summary' data table
 
@@ -110,15 +110,15 @@ In order to produce the 'data_summary' table, the script 'run_analysis.R' was cr
 
 - UCI HAR Dataset/train/subject_train.txt
 - UCI HAR Dataset/train/X_train.txt
-- UCI HAR Dataset/train/y_train.txt.
+- UCI HAR Dataset/train/y_train.txt
 
 from the train set by columns into a table that contains the human subject, the activity performed and the values of the features.
 
-2. Binds the following files,
+2. and subsequently binds the following files,
 
 - UCI HAR Dataset/test/subject_test.txt
 - UCI HAR Dataset/test/X_test.txt
-- UCI HAR Dataset/test/y_test.txt.
+- UCI HAR Dataset/test/y_test.txt
 
 from the test set by columns into a table that contains the human subject, the activity performed and the values of the features.
 
@@ -139,6 +139,6 @@ from the test set by columns into a table that contains the human subject, the a
 
 **Creates a new dataset with the average of each variable for each activity and each subject**
 
-1. Groups the tidy data table created in step 4 by 'subject' and 'activity'.
+1. Groups the tidy data table created in the previous step by 'subject' and 'activity'.
 2. Calculates the average of each variable.
 3. Writes the data into a text file located in the current working directory.
