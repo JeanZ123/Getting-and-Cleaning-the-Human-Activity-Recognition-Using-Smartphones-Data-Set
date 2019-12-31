@@ -106,7 +106,7 @@ In order to produce the 'data_summary' table, the script 'run_analysis.R' was cr
 
 **Merges the training and the test sets into a single dataset**
 
-1. Binds the following files,
+1. Combines the following files,
 
 - UCI HAR Dataset/train/subject_train.txt
 - UCI HAR Dataset/train/X_train.txt
@@ -114,7 +114,7 @@ In order to produce the 'data_summary' table, the script 'run_analysis.R' was cr
 
 from the train set by columns into a table that contains the human subject, the activity performed and the values of the features.
 
-2. and subsequently binds the following files,
+2. and subsequently combines the following files,
 
 - UCI HAR Dataset/test/subject_test.txt
 - UCI HAR Dataset/test/X_test.txt
@@ -122,7 +122,7 @@ from the train set by columns into a table that contains the human subject, the 
 
 from the test set by columns into a table that contains the human subject, the activity performed and the values of the features.
 
-3. Binds the data frames created for the test and train set into one large dataset by rows.
+3. Combines the data frames created for the test and train set into one large dataset by rows.
 
 **Extracts only the measurements on the mean and standard deviation for each measurement**
 
