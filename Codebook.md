@@ -23,7 +23,7 @@ General information about the collection of the raw data is given in the 'README
 > gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff 
 > frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency > domain.
 
-The purpose of the script 'run_Analysis.R' is to collect and clean the Human Activity Recognition Data Set. The resulting 'data_summary' table is a selection of the original dataset that 1.) only contains measurements on the mean and standard deviation for each measurement and 2.) creates a new dataset with the average of each variable for each activity and each subject.
+The purpose of the script 'run_Analysis.R' is to collect and clean the Human Activity Recognition Data Set. The resulting 'data_summary' table is a selection of the original dataset that 1.) only contains measurements on the mean and standard deviation and 2.) creates a new dataset with the average of each variable for each activity and each subject.
 
 ### Description of the variables from the 'data_summary' data table
 
