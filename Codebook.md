@@ -32,7 +32,7 @@ The first two variables, 'subject' and 'activity', are the identifiers of each r
 The following is a list of all variables in the 'data_summary' table with their class and range indicated:
 
 1. Subject, integer,	1-30, Identifier of the human subject.
-2. Activity, character, Identifier of the activity. Values: WALKING, WALKING UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+2. Activity, character, Values: WALKING, WALKING UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING, Identifier of the activity performed. 
 3. TimeBodyAccelerometerMean()-X, numeric,	[-1, 1],	Time domain, Average of means for body acceleration on X axis
 4. TimeBodyAccelerometer-Mean()-Y, numeric,	[-1, 1],	Time domain, Average of means for body acceleration on Y axis
 5. TimeBodyAccelerometer-Mean()-Z,	numeric,	[-1, 1],	Time domain, Average of means for body acceleration on Z axis
