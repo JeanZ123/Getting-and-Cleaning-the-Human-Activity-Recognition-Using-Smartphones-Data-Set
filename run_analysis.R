@@ -1,6 +1,7 @@
 run_analysis <- function() {
 
   library(dplyr)
+  library(magrittr)
   
   message("Loading data files into R...")
 
@@ -45,17 +46,17 @@ run_analysis <- function() {
   # Appropriately label the dataset with descriptive variable names
   
   names(Filtered_Data)[2] <- "Activity"
-  names(Filtered_Data) <- names(Filtered_Data) %>% gsub("BodyBody", "Body", .) 
-                                               %>% gsub("Gyro", "Gyroscope", .) 
-                                               %>% gsub("Acc", "Accelerometer", .) 
-                                               %>% gsub("Mag", "Magnitude", .)
-                                               %>% gsub("^t", "Time", .)
-                                               %>% gsub("^f", "Frequency", .)
-                                               %>% gsub("tBody", "TimeBody", .)
-                                               %>% gsub("mean", "Mean", .)
-                                               %>% gsub("std", "STD", .)
-                                               %>% gsub("freq", "Frequency", .)
-                                               %>% paste0("Avrg", .)
+  names(Filtered_Data) %<>% gsub("BodyBody", "Body", .) 
+                        %>% gsub("Gyro", "Gyroscope", .) 
+                        %>% gsub("Acc", "Accelerometer", .) 
+                        %>% gsub("Mag", "Magnitude", .)
+                        %>% gsub("^t", "Time", .)
+                        %>% gsub("^f", "Frequency", .)
+                        %>% gsub("tBody", "TimeBody", .)
+                        %>% gsub("mean", "Mean", .)
+                        %>% gsub("std", "STD", .)
+                        %>% gsub("freq", "Frequency", .)
+                        %>% paste0("Avrg", .)
                        
   # Create a new dataset with the average of each variable for each activity and each subject
   
