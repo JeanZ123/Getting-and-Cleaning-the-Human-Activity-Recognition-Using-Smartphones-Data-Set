@@ -60,8 +60,8 @@ run_analysis <- function() {
                        
   # Create a new dataset with the average of each variable for each activity and each subject
   
-  Data_Summary <- Filtered_Data %>% group_by(Subject, Code) %>% summarize_all(.funs="mean")
-  write.table(Data_Summary, "Data_Summary.txt")
+  data_summary <- Filtered_Data %>% group_by(Subject, Code) %>% summarize_all(.funs="mean")
+  write.table(data_summary, "data_summary.txt")
   
   message("The script was executed successfully.")
 }
