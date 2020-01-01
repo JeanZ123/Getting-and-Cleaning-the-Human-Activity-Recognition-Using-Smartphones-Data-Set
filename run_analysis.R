@@ -1,7 +1,6 @@
 run_analysis <- function() {
 
   library(dplyr)
-  library(magrittr)
   
   message("Loading data files into R...")
 
