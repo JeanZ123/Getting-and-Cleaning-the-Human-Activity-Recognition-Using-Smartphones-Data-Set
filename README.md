@@ -2,7 +2,7 @@
 
 ## About
 
-One of the most exciting areas in all of data science right now is wearable computing - see for example this article. Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The purpose of this project is to collect and clean the Human Activity Recognition Using Smartphones Data Set from the UCI Machine Learning Repository by using R. The goal is to prepare tidy data that can be used for later analysis. The project was created as part of the Course „Getting And Cleaning Data“ offered by Johns Hopkins University via Coursera.
+One of the most exciting areas in all of data science right now is wearable computing - see for example [this](https://www.itnews.com/article/2115126/big-data--activity-tracking--and-the-battle-for-the-world-s-top-sports-brand.html) article. Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The purpose of this project is to collect and clean the Human Activity Recognition Using Smartphones Data Set from the UCI Machine Learning Repository by using R. The goal is to prepare tidy data that can be used for later analysis. The project was created as part of the Course „Getting And Cleaning Data“ offered by Johns Hopkins University via Coursera.
 
 ## Details on the files that exist in this repository
 
