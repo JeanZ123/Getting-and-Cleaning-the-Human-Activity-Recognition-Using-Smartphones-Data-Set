@@ -6,13 +6,10 @@ run_analysis <- function() {
   
   # Download the folder to the local machine
   
-  setwd("C:\\Users\\Marius\\Desktop\\Statistik\\Datasets")
-  
-  fileURL <-
-    "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-  file <- download.file(fileURL, "UCI HAR Dataset.zip")
-  
   if (!file.exists("UCI HAR Dataset")) {
+    fileURL <-
+      "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+    file <- download.file(fileURL, "UCI HAR Dataset.zip")
     unzip(file)
   }
   
@@ -61,16 +58,15 @@ run_analysis <- function() {
   
   names(Filtered_Data)[2] <- "Activity"
   names(Filtered_Data) %<>% gsub("BodyBody", "Body", .) %>%
-    gsub("Gyro", "Gyroscope", .) %>%
-    gsub("Acc", "Accelerometer", .) %>%
-    gsub("Mag", "Magnitude", .) %>%
-    gsub("^t", "Time", .) %>%
-    gsub("^f", "Frequency", .) %>%
-    gsub("tBody", "TimeBody", .) %>%
-    gsub("mean", "Mean", .) %>%
-    gsub("std", "STD", .) %>%
-    gsub("freq", "Frequency", .)
-  
+                            gsub("Gyro", "Gyroscope", .) %>%
+                            gsub("Acc", "Accelerometer", .) %>%
+                            gsub("Mag", "Magnitude", .) %>%
+                            gsub("^t", "Time", .) %>%
+                            gsub("^f", "Frequency", .) %>%
+                            gsub("tBody", "TimeBody", .) %>%
+                            gsub("mean", "Mean", .) %>%
+                            gsub("std", "STD", .) %>%
+                            gsub("freq", "Frequency", .)
   names(Filtered_Data) <-
     c(names(Filtered_Data[c(1, 2)]), paste0("Avrg", names(Filtered_Data[-c(1, 2)])))
   
@@ -78,7 +74,7 @@ run_analysis <- function() {
   
   data_summary <-
     Filtered_Data %>% group_by(Subject, Activity) %>% summarise_all(funs(mean))
-  write.table(data_summary, "data_summary.txt", row.name=FALSE)
+  write.table(data_summary, "data_summary.txt", row.name = FALSE)
   
   message("The script was executed successfully.")
 }
