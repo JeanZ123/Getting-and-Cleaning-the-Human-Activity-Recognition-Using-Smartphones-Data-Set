@@ -74,6 +74,7 @@ run_analysis <- function() {
   
   data_summary <-
     Filtered_Data %>% group_by(Subject, Activity) %>% summarise_all(funs(mean))
+  
   write.table(data_summary, "data_summary.txt", row.name = FALSE)
   
   message("The script was executed successfully.")
